@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let a = 45;
+      console.log(a);
+
+      // let
+      // var
+      // const
+
+      // Number
+      // String
+      // Object
+      // undefined
+      // null
+
+      function Kaushal() {
+        console.log("Hii Kaushal");
+      }
+
+      let obj1 = {
+        k: 35,
+        d: 36,
+        fun1: function numberData(number) {
+          console.log("the number is " + number);
+          Kaushal();
+        },
+      };
+
+      document.addEventListener("click",function click(){
+        console.log("clicked");
+
+        obj1.fun1(455);
+      });
+
+      let arr = [34,45,56];
+      arr.forEach(element => {
+        console.log(element);
+      });
+
+      function thisKaushal() {
+        console.log("this kaushal is => ",this);
+      }
+
+      thisKaushal();
+
+      let myFun = (number => {
+        console.log("value of this => ",this);
+      });
+      
+      myFun();
+    </script>
+  </head>
+  <body>
+    <h1>I am learning js</h1>
+  </body>
+</html>
